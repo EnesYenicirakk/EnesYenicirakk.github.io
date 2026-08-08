@@ -1,0 +1,13 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Sass cache & map files
+.sass-cache/
+*.css.map
+
+# Tool config files
+prepros-6.config
