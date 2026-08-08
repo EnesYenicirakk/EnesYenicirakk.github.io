@@ -232,6 +232,10 @@
 
 	var stickyFunction = function() {
 
+		if (!$.fn.stick_in_parent || $("#sticky_item").length === 0) {
+			return;
+		}
+
 		var h = $('.image-content').outerHeight();
 
 		if ($(window).width() <= 992 ) {
@@ -254,17 +258,17 @@
 				$("#sticky_item").trigger("sticky_kit:detach");
 				$("#sticky_item").trigger("sticky_kit:unstick");
 
-				$("#sticky_item").stick_in_parent();
+				if ($.fn.stick_in_parent) {
+					$("#sticky_item").stick_in_parent();
+				}
 			}
-			
-
-			
-
 		});
 
 		$('.sticky-parent').css('height', h);
 
-		$("#sticky_item").stick_in_parent();
+		if ($.fn.stick_in_parent) {
+			$("#sticky_item").stick_in_parent();
+		}
 
 	};
 
