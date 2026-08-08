@@ -116,8 +116,8 @@ figure figcaption {
 }
 
 #aydemir-aside {
-  padding-top: 2em;
-  padding-bottom: 20px;
+  padding-top: 2.5em;
+  padding-bottom: 30px;
   float: left;
   width: 300px;
   position: fixed;
@@ -125,9 +125,6 @@ figure figcaption {
   bottom: 0;
   height: 100vh;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   z-index: 1001;
   background: var(--bg-aside);
   color: #334155;
@@ -149,23 +146,23 @@ figure figcaption {
     -ms-transform: translateX(-300px);
     -o-transform: translateX(-300px);
     transform: translateX(-300px);
-    padding-top: 2.5em;
+    padding-top: 3em;
   }
 }
 #aydemir-aside .author-img {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 12px auto;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 16px auto;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   border: 4px solid #ffffff;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 #aydemir-aside .position {
   display: block;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.8em;
 }
 #aydemir-aside .position a {
   color: var(--text-muted);
